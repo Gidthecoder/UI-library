@@ -1,14 +1,15 @@
 export default function Product(){
     return (
-        {/*<main>
-            <div className="flex flex-row">
+        <main>
+            {/*<div className="flex flex-row">
                 <Images/>
                 <About/>
                 <Shipping/>
             </div>
             <ProductInformation/>
-            <Reviews/>
-        </main>*/}
+            <Reviews/>*/}
+            <div>loading</div>
+        </main>
     )
 }
 /*
