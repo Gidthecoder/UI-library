@@ -10,7 +10,7 @@ export default function Exchanges(){
                     <p className="text-5 xl:text-[30px]">Jupiter</p>
                 </div>
                 <div className="flex-none">
-                    <img src='/volcano/coinbase.svg.png' className="w-[100px] xl:w-[200px] relative"/>
+                    <img src='/volcano/coinbase.png' className="w-[100px] xl:w-[200px] relative"/>
                 </div>
                 <div className="flex-none flex flex-row items-center gap-x-[10px]">
                     <img src='/volcano/dextools.svg' className="w-[106px] xl:w-[200px]"/>
