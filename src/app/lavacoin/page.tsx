@@ -6,7 +6,7 @@ import FAQ from "./components/FAQ";
 
 export default function Home(){
     return (
-        <main className="bg-black select-none focus:outline-none [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] touch-none">
+        <main className="bg-black overflow-auto select-none focus:outline-none [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] touch-none">
             <Hero/>
             <Exchanges/>
             <WhatIsLavaCoin/>
