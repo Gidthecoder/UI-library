@@ -71,7 +71,7 @@ export default function FAQ(){
                             </p>
                             {
                                 displayed === 5 &&
-                                <p className="p-4">Oh, yes it does - and it always has! Lavacoin's primary purpose has always been to be used as a currency. Lavacoin was originally a fork of a cryptocurrency called Luckycoin - itself a fork of Litecoin.</p>
+                                <p className="p-4">Oh, yes it does - and it always has! Lavacoin&apos;s primary purpose has always been to be used as a currency. Lavacoin was originally a fork of a cryptocurrency called Luckycoin - itself a fork of Litecoin.</p>
                             }
                     </div>
                 </div>

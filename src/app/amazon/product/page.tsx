@@ -1,6 +1,6 @@
 export default function Product(){
     return (
-        <main>
+        {/*<main>
             <div className="flex flex-row">
                 <Images/>
                 <About/>
@@ -8,10 +8,10 @@ export default function Product(){
             </div>
             <ProductInformation/>
             <Reviews/>
-        </main>
+        </main>*/}
     )
 }
-
+/*
 function Images(){
     return (
         <div className="flex flex-row">
@@ -518,3 +518,4 @@ When it arrived it was neatly packaged with a great presentation once you open i
         </div>
     )
 }
+    */
