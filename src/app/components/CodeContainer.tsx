@@ -11,7 +11,11 @@ import 'prismjs/components/prism-css';
 import 'prismjs/components/prism-json';
 import { Sun, Moon, Copy, Check } from 'lucide-react';
 
-const CodeContainer = ({ code, language }) => {
+interface CodeContainerProps {
+  code: string;
+  language: string;
+}
+const CodeContainer = ({ code, language }: CodeContainerProps) => {
   const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
