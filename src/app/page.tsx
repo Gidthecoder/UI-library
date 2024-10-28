@@ -12,7 +12,7 @@ export default function Home() {
     },
     {
       href: '/lavacoin',
-      imageSrc: '/volcano/lavacoin_hero.png',
+      imageSrc: '/volcano/coin.png',
       alt: 'LavaCoin user interface',
       title: 'LavaCoin UI'
     }
