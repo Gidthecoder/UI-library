@@ -16,4 +16,4 @@ export default function PostEngagements({likes, comments}: PostEngagementsProps)
         <p className={normalFont}>{comments} comments</p>
       </div>
     )
-  }
+}

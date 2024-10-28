@@ -1,5 +1,6 @@
 import {smallFont, normalFont, largeFont, textColor, darkNeutral, linkColor } from './utils'
-import {Globe, FollowIcon} from './icons'
+import {Globe, FollowIcon} from './icons';
+import Image from 'next/image';
 
 interface PostSenderProps {
     profileName:string, 
@@ -11,7 +12,7 @@ export default function PostSender({profileName, level, bio, date}:PostSenderPro
     return (
       <div className='flex flex-row py-2 items-center'>
 
-        <img src='/linkedin/gid.jpg' className="w-12 h-12 rounded-full" />
+        <Image src='/linkedin/gid.jpg' alt='profile pics' width={48} height={48}  className="rounded-full" />
 
         <div className='ml-2.5 w-3/5 mr-auto'>
 
@@ -33,6 +34,5 @@ export default function PostSender({profileName, level, bio, date}:PostSenderPro
           <p className={largeFont} style={{color: linkColor,fontWeight:'bold'}}>&nbsp;Follow</p>
         </div>
       </div>
-  
     )
-  }
+}

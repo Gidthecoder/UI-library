@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function WhatIsLavaCoin(){
     return (
         <div className="flex flex-col xl:flex-row flex-center items-center  bg-black text-white w-[calc(100%-40px)] sm:w-[50%] xl:w-[70%] mx-auto mt-[10vh] xl:mt-[30vh]">
@@ -7,7 +8,7 @@ export default function WhatIsLavaCoin(){
                     <p>With its explosive potential, LavaCoin is set to flow through the crypto market like lava down a mountainside—unstoppable, hot, and ready to ignite the future of digital currency.</p>
                 </div>
                 <div  className="flex-none xl:order-last leading-normal">
-                    <img src='/volcano/coin.png' className="w-[100%] sm:w-[50vw] xl:w-[35vw]"/>
+                    <Image src="/volcano/coin.png" alt="Coin" width={1920} height={1080} className="w-[100%] sm:w-[50vw] xl:w-[35vw]" />
                 </div>
             </div>
     )

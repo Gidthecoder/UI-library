@@ -1,29 +1,32 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Header from '@/app/components/Header';
+import Card from '@/app/components/Card';
+import Footer from '@/app/components/Footer';
 
 export default function Home() {
+  const projects = [
+    {
+      href: '/linkedin',
+      imageSrc: '/linkedin/linkedin_post.png',
+      alt: 'linkedin post user interface',
+      title: 'LinkedIn UI'
+    },
+    {
+      href: '/lavacoin',
+      imageSrc: '/volcano/lavacoin_hero.png',
+      alt: 'LavaCoin user interface',
+      title: 'LavaCoin UI'
+    }
+  ];
+
   return (
-    <main className="p-2">
-        <h1 className="font-bold text-center text-lg text-slate-700 mb-2">UI Library</h1>
-        <div className='flex flex-col lg:flex-row gap-x-5'>
-          <div className="w-full lg:w-[400px] p-1.5 mb-5 lg:mb-0 lg:border lg:border-slate-500 rounded-lg">
-            <Link href='/linkedin/posts'>
-              <img alt='linkedin post user interface' src='/linkedin/linkedin_post.png'  className="w-full h-[400px] object-cover"/>
-              <p className="font-bold text-center text-base text-slate-700 leading-6">Linkedin posts</p>
-            </Link>
-          </div>
-
-          <div className="w-full lg:w-[400px] p-1.5 mb-5 lg:mb-0 lg:border lg:border-slate-500 rounded-lg">
-            <Link href='/lavacoin'>
-              <img alt='LavaCoin user interface' src='/volcano/lavacoin_hero.png'  className="w-full h-[400px] object-cover"/>
-              <p className="font-bold text-center text-base text-slate-700 leading-6">LavaCoin</p>
-            </Link>
-          </div>
-        </div>
-
-        <div className='text-center fixed bottom-0 w-full'>
-          <a href='https://x.com/GidtheCoder' target='_blank' className='text-blue-700 text-lg underline'>Built by @Gidthecoder</a>
-        </div>
+    <main className="p-2 min-h-screen relative pb-16 2xl:w-[1000px] mx-auto">
+      <Header/>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-4 mt-2 lg:mt-4">
+        {projects.map((project, index) => (
+          <Card key={index} project={project} />
+        ))}
+      </div>
+      <Footer/>
     </main>
   );
 }
