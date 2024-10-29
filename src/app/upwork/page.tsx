@@ -11,7 +11,7 @@ export default function Page(){
   const projects = [
         {
           href: '/upwork/ui-block-6',
-          imageSrc: '/upwork/block-6-pics.png',
+          imageSrc: '/upwork/block-6-ui-pics.png',
           alt: 'Upwork UI block',
           title: 'Upwork UI block'
         }

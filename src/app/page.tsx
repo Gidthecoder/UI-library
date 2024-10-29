@@ -24,7 +24,7 @@ export default function Home() {
     },
     {
       href: '/upwork',
-      imageSrc: '/upwork/block-6-pics.png',
+      imageSrc: '/upwork/block-6-ui-pics.png',
       alt: 'Upwork Homepage user interface',
       title: 'Upwork Homepage UI'
     }
