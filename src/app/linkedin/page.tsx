@@ -3,6 +3,10 @@ import GroupNav from '../components/GroupNav';
 import Card from '@/app/components/Card';
 import Footer from '@/app/components/Footer';
 
+export const metadata = {
+  title: 'Linkedin UI'
+}
+
 export default function Page(){
   const projects = [
         {

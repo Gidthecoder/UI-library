@@ -22,6 +22,12 @@ export default function Home() {
       alt: 'Shopify homepage user interface',
       title: 'Shopify Homepage UI'
     },
+    {
+      href: '/upwork',
+      imageSrc: '/upwork/block-6-pics.png',
+      alt: 'Upwork Homepage user interface',
+      title: 'Upwork Homepage UI'
+    }
   ];
 
   return (
