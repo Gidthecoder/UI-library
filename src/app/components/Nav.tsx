@@ -45,15 +45,11 @@ export default function Nav({ parentUrl=null, pageTitle, code}:NavProps){
                 </button>
             </nav>
                 
-            {
-                codeBlockVisible &&
-                <>
-                    <div onClick={hideCodeBlock} className='fixed top-0 left-0 w-full h-screen z-[2]'>.</div>
-                    <div className='w-[calc(100%-9px)] sm:w-[90%] lg:w-[500px] absolute right-2 top-10 z-[3]'>
-                        <CodeContainer language={code.language} code={code.code}/>
-                    </div>
-                </>
-            }
+            <div onClick={hideCodeBlock} className={`${codeBlockVisible?'block':'hidden'} bg-transparent fixed top-0 left-0 w-full h-screen z-[2]`}>.</div>
+            <div className={`${codeBlockVisible?'block':'hidden'} w-[calc(100%-9px)] sm:w-[90%] lg:w-[500px] absolute right-2 top-10 z-[3]`}>
+                <CodeContainer language={code.language} code={code.code}/>
+            </div>
+             
         </div>
     )
 }

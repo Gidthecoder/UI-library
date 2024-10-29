@@ -15,7 +15,13 @@ export default function Home() {
       imageSrc: '/volcano/coin.png',
       alt: 'LavaCoin user interface',
       title: 'LavaCoin UI'
-    }
+    },
+    {
+      href: '/shopify',
+      imageSrc: '/shopify/hero-pics.png',
+      alt: 'Shopify homepage user interface',
+      title: 'Shopify Homepage UI'
+    },
   ];
 
   return (
