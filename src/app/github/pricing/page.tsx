@@ -107,7 +107,7 @@ export default function Home (){
   return (
     <main className="p-2 pb-16 2xl:w-[1000px] mx-auto">
       <Header/>
-      <Nav parentUrl={{title: 'Shopify homepage', link: '/shopify'}} pageTitle='Shopify homepage hero' code={code}/>
+      <Nav pageTitle='Github pricing page redesign' code={code}/>
       <div style={{ backgroundImage: "url('/github/sky.jpg')"}} className="min-h-screen p-4 sm:p-10 lg:p-0 bg-cover bg-center font-mono-sans-bold text-white">
         <div className='lg:w-[95%] xl:w-[85%] mx-auto'>
           <h1 className="pt-3 mb-4 sm:mb-12  md:text-5xl text-3xl lg:text-6xl text-white text-center">Get the complete developer platform.</h1>
