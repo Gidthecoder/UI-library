@@ -1,14 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Prism from 'prismjs';
-import 'prismjs/themes/prism-tomorrow.css';
-import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-python';
-import 'prismjs/components/prism-jsx';
-import 'prismjs/components/prism-tsx';
-import 'prismjs/components/prism-css';
-import 'prismjs/components/prism-json';
+
 import { Sun, Moon, Copy, Check } from 'lucide-react';
 
 interface CodeContainerProps {
@@ -18,9 +11,6 @@ interface CodeContainerProps {
 const CodeContainer = ({ code, language }: CodeContainerProps) => {
   const [isCopied, setIsCopied] = useState(false);
 
-  useEffect(() => {
-    Prism.highlightAll();
-  }, [code, language]);
 
   const handleCopy = async () => {
     try {
@@ -90,7 +80,7 @@ const CodeContainer = ({ code, language }: CodeContainerProps) => {
           
           {/* Code with syntax highlighting */}
           <pre className="text-sm lg:text-base p-4 overflow-x-auto bg-zinc-900">
-            <code className={`language-${language} font-mono text-sm`}>
+            <code className={` font-mono text-sm`}>
               {code}
             </code>
           </pre>

@@ -27,6 +27,12 @@ export default function Home() {
       imageSrc: '/upwork/block-6-ui-pics.png',
       alt: 'Upwork Homepage user interface',
       title: 'Upwork Homepage UI'
+    },
+    {
+      href: '/github/pricing',
+      imageSrc: '/github/github-pricing-page.png',
+      alt: 'GitHub pricing page UI',
+      title: 'Github Pricing page redesign'
     }
   ];
 

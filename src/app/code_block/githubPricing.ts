@@ -1,12 +1,47 @@
+const code = {
+    language: 'tsx',
+    code: `//style.css
+@font-face {
+  font-family: 'MonoSans-light';
+  src: url('../fonts/Monosans/Mona-Sans-Light.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+  
+@font-face {
+  font-family: 'MonoSans-medium';
+  src: url('../fonts/Monosans/Mona-Sans-Medium.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MonoSans-bold';
+  src: url('../fonts/Monosans/Mona-Sans-Bold.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
+  
+.font-mono-sans-bold {
+  font-family: 'MonoSans-bold', Helvetica, Arial, sans-serif;
+}
+
+.font-mono-sans-medium {
+  font-family: 'MonoSans-medium', Helvetica, Arial, sans-serif;
+}
+
+.font-mono-sans-light {
+  font-family: 'MonoSans-light', Helvetica, Arial, sans-serif;
+}
+
+* {
+  ::selection {
+    background-color: transparent;
+  }
+}
+
+//page.tsx
 'use client';
-
-import Header from '@/app/components/Header';
-import Nav from '@/app/components/Nav';
-import Footer from '@/app/components/Footer';
-
-import code from '@/app/code_block/githubPricing';
-
-import '../stylesheet/style.css';
 
 import { useState } from 'react';
 
@@ -39,8 +74,8 @@ function PricingCard({ tier, description, price, period = "per user/month", butt
   };
 
   return (
-    <div className={`w-full flex flex-col rounded-lg p-2 ${recommended ? 'bg-[#645a8c7f]' : 'bg-transparent'} relative`}>
-      <p className={`${recommended? 'text-white': ' text-transparent'} bg-transparent text-center px-4 py-1 rounded-full text-sm`}>RECOMMENDED</p>
+    <div className={\`w-full flex flex-col rounded-lg p-2 \${recommended ? 'bg-[#645a8c7f]' : 'bg-transparent'} relative\`}>
+      <p className={\`\${recommended? 'text-white': 'text-transparent'} bg-transparent text-center px-4 py-1 rounded-full text-sm\`}>RECOMMENDED</p>
       
       <div className='bg-[#2b1a5b7c] px-4 pt-6 text-center rounded-t-lg'>
         <h2 className="text-xl md:text-2xl mb-2">{tier}</h2>
@@ -71,7 +106,7 @@ function PricingCard({ tier, description, price, period = "per user/month", butt
         </button>
         }
         {features.map((feature:any, index:any) => (
-          <li key={index} className={ `${isVisible? 'block': 'hidden'} lg:block py-2 text-sm`}>
+          <li key={index} className={\`\${isVisible? 'block': 'hidden'} lg:block py-2 text-sm\`}>
             <div onClick={() => toggleItem(index)}  className='flex flex-row items-start gap-x-2 cursor-pointer'>
               <svg className="w-4 h-4 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}  d="M9 5l7 7-7 7" />
@@ -127,8 +162,8 @@ export default function Home (){
 const pricingData = {
   free: {
     tier: "Free",
-    description: `The basics for individuals 
-    and organizations`,
+    description: \`The basics for individuals 
+    and organizations\`,
     price: "0",
     buttonText: "Join for free",
     features: [
@@ -181,8 +216,8 @@ const pricingData = {
   },
   team: {
     tier: "Team",
-    description: `Advanced collaboration for 
-    individuals and organizations`,
+    description: \`Advanced collaboration for 
+    individuals and organizations\`,
     price: "4",
     buttonText: "Continue with Team",
     features: [
@@ -246,8 +281,8 @@ const pricingData = {
   },
   enterprise: {
     tier: "Enterprise",
-    description: `Security, compliance, 
-    and flexible deployment`,
+    description: \`Security, compliance, 
+    and flexible deployment\`,
     price: "21",
     period: "per user/month",
     buttonText: "Start a free trial",
@@ -343,3 +378,7 @@ const pricingData = {
 };
 
         
+`
+}
+
+export default code;
