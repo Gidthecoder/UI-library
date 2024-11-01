@@ -33,6 +33,12 @@ export default function Home() {
       imageSrc: '/github/github-pricing-page.png',
       alt: 'GitHub pricing page UI',
       title: 'Github Pricing page redesign'
+    },
+    {
+      href: '/stripe/contact-sales-form',
+      imageSrc: '/stripe/contact-sales.png',
+      alt: 'Stripe Contact Sales Form',
+      title: 'Stripe Contact form with an AI agent'
     }
   ];
 
