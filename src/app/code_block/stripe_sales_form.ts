@@ -433,6 +433,8 @@ const API_KEY = process.env.API_KEY || '';
 const openai = new OpenAI({ apiKey: API_KEY });
 
 export async function POST(request: Request) {
+  //rate limiting and authorization algorithms should be implemented here
+  
   try {
     const { prompt } = await request.json();
 
