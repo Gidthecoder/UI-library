@@ -14,7 +14,7 @@ export default function Home() {
       href: '/lavacoin',
       imageSrc: '/volcano/coin.png',
       alt: 'LavaCoin user interface',
-      title: 'LavaCoin UI'
+      title: 'LavaCoin UI (personal project)'
     },
     {
       href: '/shopify',
@@ -33,12 +33,24 @@ export default function Home() {
       imageSrc: '/github/github-pricing-page.png',
       alt: 'GitHub pricing page UI',
       title: 'Github Pricing page redesign'
-    },
+    }, 
     {
       href: '/stripe/contact-sales-form',
-      imageSrc: '/stripe/contact-sales.png',
+      imageSrc: '/stripe/contact-sales.png', 
       alt: 'Stripe Contact Sales Form',
       title: 'Stripe Contact form with an AI agent'
+    },
+    {
+      href: '/metawin',
+      imageSrc: '/metawin/hero.png', 
+      alt: 'metawin homepage',
+      title: 'Metawin homepage redesign'
+    },
+    {
+      href: '/linear/hero',
+      imageSrc: '/linear/pics.png',
+      alt: 'Linear hero redesign',
+      title: 'Linear hero redesign'
     }
   ];
 
